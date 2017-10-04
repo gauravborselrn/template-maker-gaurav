@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>DIY Template Maker</title>
+<meta name="keywords" content="DIY Template Maker">
+<meta name="description" content="DIY Template Maker">
+<meta name="author" content="DIY Template Maker">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Modernizr -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+  /*LOGO upload*/
+            function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) { 
+                    $('.logo-holder')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="col-lg-3 col-md-3 nopadd zone lftfixed">
+  <div class="sidebar">
+    <h3>DIY Template Maker</h3>
+    <div class="md-form">
+      <form>
+        <ul class="sideform">
+          <li>
+            <div class="form-group">
+              <label class="">Add Partner Logo</label>
+              <input type="file" name="img[]" class="file" onchange="readURL(this);">
+              <div class="input-group col-xs-12">
+                <input type="text" class="form-control input-lg" disabled placeholder="">
+                <span class="input-group-btn">
+                <button class="browse btn btn-primary" type="button">Browse Logo</button>
+                </span> </div>
+            </div>
+          </li>
+		  
+          <li>
+            <div id="cp1" class="input-group form-group colorpicker-component">
+              <label class="">Partner Brand Color 1</label>
+              <input type="text" value="#303945" class="form-control" />
+              <span class="input-group-addon"><i></i></span> </div>
+          </li>
+          <li>
+            <div id="cp2" class="input-group form-group colorpicker-component">
+              <label class="">Partner Brand Color 2</label>
+              <input type="text" value="#1f1f1f" class="form-control" />
+              <span class="input-group-addon"><i></i></span> </div>
+          </li>
+		   
+		   <li>
+            <div id="cp3" class="input-group form-group colorpicker-component">
+              <label class="">Icon Color</label>
+              <input type="text" value="#FFFFFF" class="form-control" />
+              <span class="input-group-addon"><i></i></span> </div>
+          </li>
+		  
+		   <li>
+            <div id="cp4" class="input-group form-group colorpicker-component">
+              <label class="">Text Color</label>
+              <input type="text" value="#535252" class="form-control" />
+              <span class="input-group-addon"><i></i></span> </div>
+          </li>
+         
+<!--		 
+		  <li id='text-color'>
+            <div class="form-group">
+			           <label class="blocklbl">Text Color</label>
+		            <span class="rdthree"> 
+                <input type="radio" id="White" value='#ffffff' name="radio-group-one" checked>
+                <label for="White">White</label>
+                </span> <span class="rdfour"> 
+                <input type="radio" id="Black" value='#000000' name="radio-group-one">
+                <label for="Black">Black</label>
+                </span> 
+            </div>
+          </li>
+	-->	  
+		      <li id='screen-mode'>
+            <div class="form-group"> <span class="rdone"> <i class="material-icons">&#xE30C;</i>
+              <input type="radio" id="desktop" name="radio-group" checked>
+              <label for="desktop">Desktop</label>
+              </span> <span class="rdtwo"> <i class="material-icons">&#xE324;</i>
+              <input type="radio" id="mobile" name="radio-group">
+              <label for="mobile">Mobile</label>
+              </span> </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <!-- <a class="sitebutton marg-left-35">Reset</a> <img src="images/lrnlogo.jpg" class="margin-b-35"> --></div>
+</div>
+<div class="col-lg-9 col-md-9 nopadd rtlright">
+  <div class="top tpfxd"><a href="#" class="sitebutton save-prev-img"><i class="fa fa-download" aria-hidden="true"></i>Save Preview Image</a></div>
+  <div class="tphight">
+  <div id="prntdesk" class="middle desktop-view ui-view">
+    <div class="midtop">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 logo"><img class='logo-holder' src="images/lrnlogo.png" alt="Logo"></div>
+        <div class="col-lg-8 col-md-8">
+          <ul class="breadcrumb">
+            <li>The Company Code: Putting Principle into Practice</li>
+            <li class="rtarrow"><i class="material-icons">&#xE315;</i></li>
+            <li class="active">A Culture of Respect</li>
+            <li class="rtclose"><i class="material-icons">&#xE5CD;</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="midmid"> <img src="images/middle-img.jpg"></div>
+    <div class="midbottom">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <ul class="botmenu">
+            <li><i class="material-icons">&#xE241;</i><a href="#">Menu</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 midcorn text-center">
+          <ul class="midtimer">
+            <li>7/90</li>
+            <li>
+              <div class="clearfix">
+                <div class="progress">
+                  <div data-percentage="0%" style="width: 10%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </li>
+            <li>00:02 / 00:02</li>
+          </ul>
+          <a href="#">© LRN Corporation</a> </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="botmenu flrght">
+            <li><i class="material-icons">&#xE8FD;</i><a href="#">Help</a></li>
+            <li><i class="material-icons">&#xE2C8;</i><a href="#">Resources</a></li>
+            <li><i class="fa fa-angle-left" aria-hidden="true"></i><a href="#">Back</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="midlast"><ul>
+	<li>Partner Brand Color 1 - <span class='color1'>#303945</span></li>
+	<li>Partner Brand Color 2 - <span class='color2'>#1f1f1f</span></li>
+	<li>Icon Color - <span class='color4'>#ffffff</span></li>
+	<li>Text Color - <span class='color3'>#535252</span></li>
+	</ul></div>
+  </div>
+  
+   
+  <div id="prntdesk-open" class="middle desktop-view ui-view">
+    <div class="midtop">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 logo"><img class='logo-holder' src="images/lrnlogo.png" alt="Logo"></div>
+        <div class="col-lg-8 col-md-8">
+          <ul class="breadcrumb">
+            <li>The Company Code: Putting Principle into Practice</li>
+            <li class="rtarrow"><i class="material-icons">&#xE315;</i></li>
+            <li class="active">A Culture of Respect</li>
+            <li class="rtclose"><i class="material-icons">&#xE5CD;</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="resmenuop" class="midmid"> <img src="images/middle-img.jpg">
+	<ul class="resources">
+	<li class="headermenu">Resources <i class="material-icons">&#xE5CD;</i></li>
+	<li><a href="#">FAQ</a></li>
+	<li><a href="#">Top Ten</a></li>
+	<li><a href="#">Contact</a></li>
+	</ul>
+	</div>
+    <div class="midbottom">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <ul class="botmenu">
+            <li><i class="material-icons">&#xE241;</i><a href="#">Menu</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 midcorn text-center">
+          <ul class="midtimer">
+            <li>7/90</li>
+            <li>
+              <div class="clearfix">
+                <div class="progress">
+                  <div data-percentage="0%" style="width: 10%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </li>
+            <li>00:02 / 00:02</li>
+          </ul>
+          <a href="#">© LRN Corporation</a> </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="botmenu flrght">
+            <li><i class="material-icons">&#xE8FD;</i><a href="#">Help</a></li>
+            <li class="actv"><i class="material-icons">&#xE2C8;</i><a href="#">Resources</a></li>
+            <li><i class="fa fa-angle-left" aria-hidden="true"></i><a href="#">Back</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="midlast"><ul>
+	<li>Partner Brand Color 1 - <span class='color1'>#303945</span></li>
+	<li>Partner Brand Color 2 - <span class='color2'>#1f1f1f</span></li>
+	<li>Icon Color - <span class='color4'>#ffffff</span></li>
+	<li>Text Color - <span class='color3'>#535252</span></li>
+	</ul></div>
+  </div>
+  
+  
+  <div id="mobile-print" class="mobile-view ui-view" style="display: none">
+    <div id="mobile_menu">
+      <div class="first_col">
+        <ul>
+          <li class="active"><i class="material-icons">&#xE896;</i></li>
+          <li><i class="material-icons">&#xE2C8;</i></li>
+          <li><i class="material-icons">&#xE8FD;</i></li>
+          <li><i class="material-icons">&#xE5CD;</i></li>
+        </ul>
+      </div>
+      <div class="second_col">
+        <h3>Menu</h3>
+        <ul>
+          <li class="complete"><a href="#">Conclusum est enim contra</a></li>
+          <li class="inprogress"><a href="#" class="arrow">Luxuriam non reprehendit, modo sit vacua infinita cupiditate et timore</a></li>
+          <li class="pending"><a href="#">Nemo nostrum istius generis asotos iucunde putat vivere</a></li>
+          <li class="pending"><a href="#" class="arrow">Sint modo partes vitae beatae</a></li>
+          <li class="pending"><a href="#" class="arrow">Cyrenaicos satis acute, nihil ad Epicurum</a></li>
+          <li class="pending"><a href="#">Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus</a></li>
+          <li class="pending"><a href="#" class="arrow">Duo enim genera quae erant, fecit tria</a></li>
+          <li class="pending"><a href="#" class="arrow">An est aliquid, quod te sua sponte delectet</a></li>
+          <li class="pending"><a href="#" class="arrow">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum</a></li>
+          <li class="pending"><a href="#">Stuprata per vim Lucretia a regis filio testata civis se ipsa interemit</a></li>
+          <li class="pending"><a href="#">Duo Reges: constructio interrete</a></li>
+          <li class="pending"><a href="#" class="arrow">Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest</a></li>
+          <li class="pending"><a href="#">Duo Reges: constructio interrete</a></li>
+        </ul>
+      </div>
+      <div class="third_col">
+        <ul>
+          <li class="active"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="bottom_area text-center">
+        <ul class="botuplk">
+          <li class="one"><i class="fa fa-play" aria-hidden="true"></i></li>
+          <li class="two">00:00</li>
+          <li class="three"><div class="clearfix">
+                <div class="progress">
+                  <div data-percentage="0%" style="width: 7%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div></li>
+          <li class="four">00:41</li>
+          <li class="five"><span>1.0x</span></li>
+          <li class="six"><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+        </ul>
+        <div class="text-center">
+          <ul class="midtimer">
+            <li>7/90</li>
+            <li>
+              <div class="clearfix">
+                <div class="progress">
+                  <div data-percentage="0%" style="width: 7%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <span class="btcopy">© LRN Corporation</span> </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- /FOOTER --> 
+<script src="js/jquery-3.2.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-colorpicker.min.js"></script>
+<script src="js/html2canvas.js"></script> 
+<script src="js/main.js"></script> 
+</body>
+</html>
