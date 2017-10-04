@@ -529,20 +529,20 @@ span.rdone i, span.rdtwo i {
 
 #mobile_menu .first_col {
 	width: 46px;
-	background: #063071;
+	background: #303945;
 	float: left;
 	height: 648px;
 }
 #mobile_menu .second_col {
 	width: 332px;
-	background: #e8e8e8;
+	background: #292f38;
 	float: left;
 	height: 648px;
-	border-bottom: 4px solid #063071;
+	border-bottom: 4px solid #303945;
 }
 #mobile_menu .third_col {
 	width: 46px;
-	background: #063071;
+	background: #303945;
 	float: left;
 }
 #mobile_menu .first_col ul li {
@@ -566,9 +566,9 @@ span.rdone i, span.rdtwo i {
 	
 }
 #mobile_menu .first_col ul li.active {
-	background-color: #e8e8e8;
-	color: #0a0a0a;
-	border-bottom: 1px solid #e8e8e8;
+	background-color: #292f38;
+	color: #ffffff;
+	border-bottom: 1px solid #292f38;
 	margin-right: 1px;
 }
 #mobile_menu .first_col ul li.active:after {
@@ -598,7 +598,7 @@ span.rdone i, span.rdtwo i {
 }
 #mobile_menu .second_col h3 {
 	font-size: 18px;
-	color: #0a0a0a;
+	color: #ffffff;
 	font-weight: 600;
 }
 #mobile_menu .second_col ul li {
@@ -614,7 +614,7 @@ span.rdone i, span.rdtwo i {
 	left: 3px;
     top: 4px;
     position: absolute;
-	color: #0a0a0a;
+	color: #DDDDDD;
 	font-size:15px;
 }
 #mobile_menu .second_col ul li.inprogress:before {
@@ -623,7 +623,7 @@ span.rdone i, span.rdtwo i {
 	left: 3px;
     top: 4px;
     position: absolute;
-	color: #0a0a0a;
+	color: #DDDDDD;
 	font-size:15px;
 }
 #mobile_menu .second_col ul li.pending:before {
@@ -632,7 +632,7 @@ span.rdone i, span.rdtwo i {
 	left: 3px;
     top: 4px;
     position: absolute;
-	color: #0a0a0a;
+	color: #DDDDDD;
 	font-size:15px;
 }
 #mobile_menu .second_col ul li a {
@@ -649,7 +649,7 @@ span.rdone i, span.rdtwo i {
 	top: 0px;
 }
 #mobile_menu .bottom_area {
-	background-color: #e8e8e8;
+	background-color: #292f38;
 	padding: 5px;
 	width: 378px;
 }
@@ -664,16 +664,16 @@ div#mobile_menu {
 	width: 424px;
 }
 #mobile_menu .bottom_area .progress {
-	background-color: #063071;
+	background-color: #1f1f1f;
 	width: 165px;
 }
 #mobile_menu .bottom_area .progress-bar-info {
-	background-color: #0a0a0a;
+	background-color: #FFFFFF;
 }
 span.btcopy {
 	display: block;
 	font-size: 10px;
-	color: #0a0a0a;
+	color: #dddddd;
 }
 div#mobile-print {
 	margin: 0 auto;
@@ -692,7 +692,7 @@ div#mobile-print {
 	padding:5px;
 }
 #mobile_menu .bottom_area ul.botuplk li.one i {
-    color: #0a0a0a;
+    color: #FFFFFF;
 	font-size:24px;
 }
 #mobile_menu .bottom_area ul.botuplk li.two, #mobile_menu .bottom_area ul.botuplk li.four{
@@ -703,7 +703,7 @@ div#mobile-print {
 #mobile_menu .bottom_area ul.botuplk li.five span{
     color: #FFF;
 	font-size:12px;
-	background-color:#063071;
+	background-color:#1f1f1f;
 	display:block;
 	padding:5px 8px;
 	-webkit-border-radius: 5px;
@@ -711,14 +711,14 @@ div#mobile-print {
 border-radius: 5px;
 }
 #mobile_menu .bottom_area ul.botuplk li.three .progress {
-    background-color: #063071;
+    background-color: #1f1f1f;
     width: 140px;
     overflow: inherit;
 	position:relative;
 	margin-top:8px;
 }
 #mobile_menu .bottom_area ul.botuplk li.three  .progress-bar-info {
-    background-color: #0a0a0a;
+    background-color: #ffffff;
     width: 14px!important;
     height: 14px;
     border-radius: 7px;
